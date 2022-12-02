@@ -1,0 +1,149 @@
+.review-container {
+    margin: 100px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.main-container {
+    width: 80%;
+    position: relative;
+    min-height: 300px;
+    height: auto;
+    margin: 50px 0;
+    max-width: 450px;
+
+
+}
+
+.screenshot {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    top: 0%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    transform: translateX(-50%);
+    margin: 10px;
+    /* filter: blur(2px); */
+    transition: 0.2s;
+    /* object-fit: contain; */
+
+}
+
+.card {
+    padding: 20px;
+    position: relative;
+    border-bottom: 10px solid white;
+
+    max-width: 400px;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 10px 11px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 10px 11px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 10px 11px rgba(34, 60, 80, 0.2);
+}
+
+.card p {
+    position: absolute;
+    z-index: 1;
+    text-align: justify;
+    padding: 20px;
+    background-color: rgba(255, 215, 170, 0.878);
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 50%;
+    color: rgb(47, 8, 8);
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+    overflow-y: auto;
+
+}
+
+.card p::-webkit-scrollbar{
+width: 5px;
+}
+
+.change {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: rgb(255, 151, 25);
+    background: rgb(111, 18, 2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    /* margin: 3px; */
+    /* right: 100%; */
+    transition: 0.5s;
+    right: 0;
+}
+
+.change-container {
+    border: 1px solid burlywood;
+    position: absolute;
+    background-color: rgb(255, 244, 230);
+    width: 35px;
+    height: 22px;
+    right: 5%;
+    bottom: 5% !important;
+    border-radius: 11px;
+    z-index: 99;
+
+}
+
+#rev-header {
+    color: rgb(47, 8, 8);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.card-btn {
+    border: none;
+    background: transparent;
+}
+
+
+@media screen and (max-width: 580px) {
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 369px) {
+    .card img {
+        margin-left: 60px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 581px) and (max-width: 765px) {
+    .main-container {
+        width: 70%;
+    }
+
+    .card img {
+        margin-left: 60px;
+
+
+    }
+
+}

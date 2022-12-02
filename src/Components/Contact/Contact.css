@@ -1,0 +1,60 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+
+
+.contact-info {
+    display: flex;
+    max-width: 80%;
+    min-width: 70%;
+    justify-content: space-between;
+    margin: 100px auto 100px auto;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.cont {
+    color: rgb(32, 6, 6);
+    text-decoration: none;
+}
+
+.cont-text {
+    width: 30%;
+}
+
+#map {
+    width: 60%;
+    height: 400px;
+    border-radius: 50px 0;
+}
+
+.cont:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-info {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .cont-text {
+        width: 90%;
+    }
+
+    .cont-text div {
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    #map{
+        border-radius: 20px;
+    }
+}

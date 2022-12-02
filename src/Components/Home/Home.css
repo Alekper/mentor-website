@@ -1,0 +1,71 @@
+.home-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quote {
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden !important;
+
+}
+
+
+.quote img {
+    width: 100% !important;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden !important;
+    transition: 0.4s; 
+}
+
+.quote:hover img{
+     transform: scale(1.1) !important; 
+
+}
+
+.quote h1 {
+    width: 100%;
+    position: absolute;
+    padding: 20px 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.537);
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+
+}
+
+.text {
+    width: 50%;
+    align-self: center;
+    margin: 30px 0;
+}
+
+.text h1 {
+    color: brown;
+
+}
+
+.text p {
+    text-align: justify;
+    color: rgb(32, 6, 6);
+
+
+}
+
+
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 1200px) {
+    .text {
+        width: 75%;
+        align-self: center;
+        margin: 30px 0;
+    }
+    
+}
